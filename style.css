@@ -391,12 +391,13 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
+
 @media only screen and (max-width: 600px){
     #header{
         /*background-image: url(image/phonebackground.png);*/
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 50%;
         font-size: 16px;
     }
     .header-text h1{
@@ -459,6 +460,7 @@ nav .fa-solid{
     .copyright{
         font-size: 12px;
     }
+    
     .Tittleproject-text{
         margin-top: 80px;
         font-size: 16px;
