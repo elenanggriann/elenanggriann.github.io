@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Portofolio Elen
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/2acd498ca4.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/Elen.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>Elen</span> <br>from Indonesia</h1>
+            </div>
+        </div> 
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum purus vel urna facilisis, vel convallis purus laoreet. Nullam et fringilla nisl. Suspendisse potenti. Duis auctor tristique enim, nec euismod augue tincidunt eu. Nunc ac bibendum ex. Vivamus sit amet libero vel velit consequat bibendum. Integer in nunc nec magna facilisis sagittis at sit amet velit. Sed sollicitudin neque et justo cursus, id vehicula ligula fermentum. Vivamus nec fringilla sapien. Proin ut urna vel leo condimentum ullamcorper. Aenean et lacus ut libero hendrerit tincidunt. Quisque dictum blandit metus, eget laoreet metus luctus id. Curabitur non eleifend ligula, id gravida justo. Sed ac ligula vel nulla tincidunt vulputate nec nec velit. Nullam auctor arcu in eros finibus, in posuere eros cursus.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experince</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>
+                                Web App Development</li>
+                            <li><span>UI/UX Designer</span><br>
+                                Designing Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI?UX</span><br>
+                                Designing Web/App Interfacses</li>
+                            <li><span>Web Development</span><br>
+                                 Web App Development</li>
+                            <li><span>App Development</span><br>
+                                Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>
+                                Mathematics Undergraduate Degree State University of Malang (UM)</li>
+                            <li><span>2018 - 2021</span><br>
+                                 SMA Negeri 1 Lawang, Kab.Malang</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!---service--->
+
+<div id="services">
+   <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-end Developer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum purus vel urna facilisis, vel convallis purus laoreet. Nullam et fringilla nisl.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Designer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum purus vel urna facilisis, vel convallis purus laoreet. Nullam et fringilla nisl.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Data Analyst</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum purus vel urna facilisis, vel convallis purus laoreet. Nullam et fringilla nisl.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+   </div> 
+</div>
+
+<!----portofolio---->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-3.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>  
+</div>
+
+<!----contact--->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>elenanggriann@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(+62)812-3191-4257</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/elen-anggrian-natasya/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/lennnn.an/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="image/cvelen.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright</p>
+    </div>
+</div>
+
+
+<script>
+
+   var tablinks=document.getElementsByClassName("tab-links");
+   var tabcontents=document.getElementsByClassName("tab-contents");
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXuX6-AsfVz9x-ZXnuSciD1Q_KSADEieSkQVbiK8N2yR1OLUbEg0E0I7nW6wV6tlbm/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</html>
