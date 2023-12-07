@@ -305,7 +305,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .contact-right form{
-    width: 100%%;
+    width: 100%;
 }
 form input, form textarea{
     width: 100%;
@@ -334,6 +334,56 @@ form .btn2{
     text-align: center;
     padding: 16px 0;
     background: #262626;
+}
+#header-desc{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#description{
+    padding: 80px 0;
+    color: #ababab;
+}
+#description .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.desc-col-1{
+    flex-basis:40%;
+    margin-right: 48px;
+}
+.desc-col-2{
+    margin-top: 40px;
+    flex-basis: 25%;
+}
+.Tittleproject-text{
+    margin-top: 120px;
+    font-size: 32px;
+    text-align: center;
+}
+.Tittleproject-text h1{
+    font-size: 48px;
+    margin-top: 16px;
+    align-items: center;
+}
+#description h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+#description p{
+    margin-bottom: 8px;
+}
+#description .desc-col-2 h2{
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+#img-project img{
+    width: 100%;
+    border-radius: 8px;
+    margin-top:16px;
+    margin-bottom: 16px;
 }
 
 /*--------CSS FOR SMALL SCREEN -------*/
@@ -407,6 +457,24 @@ nav .fa-solid{
     }
     .copyright{
         font-size: 12px;
+    }
+    .Tittleproject-text{
+        margin-top: 80px;
+        font-size: 16px;
+    }
+    .Tittleproject-text h1{
+        font-size: 32px;
+    }
+    .desc-col-1, .desc-col-2{
+        flex-basis: 100%;
+    }
+    .desc-col-1{
+        margin-bottom: 32px;
+        margin-right: 0px;
+    }
+    .desc-col-2{
+        margin-top: 0px;
+        font-size: 16px;
     }
 }
 #msg{
