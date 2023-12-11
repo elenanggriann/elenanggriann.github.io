@@ -1,20 +1,21 @@
-//menambahkan hovered class ke daftar item terpilih
-let list=document.querySelectorAll(".navigation li");
+//menambahkan hover ke navigasi
+let list = document.querySelectorAll(".navigation li");
 
-function activelink() {
-    list.forEach((item) => {
-        item.classList.remove("hovered");
-    });
-    this.classList.add("hovered");
+function activeLink() {
+  list.forEach((item) => {
+    item.classList.remove("hovered");
+  });
+  this.classList.add("hovered");
 }
+
 list.forEach((item) => item.addEventListener("mouseover", activeLink));
 
-//menu toggle
+// Menu Toggle
 let toggle = document.querySelector(".toggle");
 let navigation = document.querySelector(".navigation");
 let main = document.querySelector(".main");
 
 toggle.onclick = function () {
-    navigation.classList.toggle("active");
-    main.classList.toggle("active");
+  navigation.classList.toggle("active");
+  main.classList.toggle("active");
 };
