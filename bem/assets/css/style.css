@@ -254,18 +254,26 @@ body{
 .cardBox .card:hover .cardName,
 .cardBox .card:hover .numbers,
 .cardBox .card:hover .iconBox{
-    color: var(--white);
+    color: var(--yellow);
 }
 /*----daftarbidang----*/
 .details{
     position: relative;
     width: 100%;
     padding: 24px;
+    margin-top: 12px;
+}
+#dashboard .details{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap:32px;
-    margin-top: 12px;
 }
+
+#bidang .details,
+#proker .details{
+    display: block;
+}
+
 .details .daftarbidang{
     position: relative;
     align-items: flex-start;
@@ -341,7 +349,7 @@ body{
 }
 .status.delivered{
     padding: 2px 4px;
-    background: #8de02c;
+    background: #09a32b;
     color: var(--white);
     border-radius:4px;
     font-size: 12px;
@@ -365,7 +373,7 @@ body{
 }
 .status.on-progress{ 
     padding: 2px 4px;
-    background: #2ccbe0;
+    background: #13a7cc;
     color: var(--white);
     border-radius:4px;
     font-size: 12px;
