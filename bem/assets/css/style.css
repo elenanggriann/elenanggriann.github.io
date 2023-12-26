@@ -61,6 +61,7 @@ body{
     pointer-events: none;
 }
 .navigation ul li p,
+.navigation ul li a,
 .navigation ul li p.tab-links{
     position: relative;
     display: block;
@@ -70,6 +71,7 @@ body{
     color:var(--white);
 }
 .navigation ul li:hover p,
+.navigation ul li:hover a,
 .navigation ul li.hovered p{
     color: var(--yellow);
     cursor: pointer;
@@ -89,7 +91,9 @@ body{
 .navigation ul li .icon ion-icon{
     font-size: 32px;
 }
-.navigation ul li p .title{
+.navigation ul li p .title,
+.navigation ul li a .title
+{
     position: relative;
     display: block;
     padding: 0 12px;
@@ -402,6 +406,33 @@ body{
 .tab-contents h1{
     text-align: right;
 }
+
+/*---Settings---*/
+.userdetails li{
+    list-style: none outside none;
+    height: 64px;
+}
+.userdetails .ket li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.userdetails .isian li{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.userdetails{
+    display: flex;
+}
+.userdetails .isian input{
+    width:300px;
+    padding-left: 8px;
+    margin-left: 24px;
+    border: 1px solid var(--black2);
+    border-radius: 4px;
+    height: 40px;
+}
+
 
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
