@@ -391,7 +391,7 @@ form .btn2{
 }
 #description{
     padding: 80px 0;
-    color: var(--black2);
+    color: var(--white);
 }
 #description .row{
     display: flex;
@@ -427,6 +427,9 @@ form .btn2{
 #description .desc-col-2 h2{
     margin-top: 8px;
     margin-bottom: 4px;
+}
+#description .desc-col-2 a{
+    color: var(--purple);
 }
 #img-project img{
     width: 100%;
