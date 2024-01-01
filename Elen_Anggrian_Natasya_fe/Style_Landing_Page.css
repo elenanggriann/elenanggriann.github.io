@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*---Variable--*/
+:root{
+    --white:#fff;
+    --white-tp: hsla(0, 0%, 50%, 0);
+    --Soft-Blue: #5468E7;
+    --Soft-Violet: #C897E4;
+    --Dark-Blue: #232340;
+    --Desaturated-Blue: #7676B2;
+    --Off-White: #F5F5F5;
+    --Light-Orange: #FFBA79;
+    --shadow:rgba(35, 35, 64, 0.60);
+    --Grayish-Blue: #D1ECFD;
+    --Desaturated-Blue: #7676B2;
+}
+
+/*--Global--*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--Off-White);
+    color: var(--black);   
+}
+
+h1{
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+}
+h2{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--Dark-Blue);
+}
+h3{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--Dark-Blue);
+}
+h4{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+    color: var(--Dark-Blue);
+}
+p,.paragraph p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--Dark-Blue);
+}
+.caption p{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.14px;
+    color: var(--Dark-Blue);
+}
+.link a{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--Dark-Blue);
+}
+
+.container{
+    padding: 0 140px;
+}
+.container1{
+    position: absolute;
+    width: 100%;
+}
+.container1 .navbar{
+    max-width: 1440px;
+    margin: 46px auto;
+    padding: 0 140px;
+}
+/*--button--*/
+
+.button-primary{
+    color: var(--Off-White);
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 44px;
+    border-radius: 4px;
+    background: var(--Soft-Blue);
+    border: 2px solid var(--white-tp);
+}
+.button-primary:hover{
+    background: #3A51E3;
+}
+.button-primary:active{
+    background: #192EB3;
+}
+.button-primary:focus{
+    border: 2px solid var(--Off-White);
+}
+.button-secondary{
+    color: var(--Off-White);
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 44px;
+    border-radius: 4px;
+    background: rgba(84, 104, 231, 0.50);
+    border: 2px solid var(--white-tp);
+}
+.button-secondary:hover{
+    background: rgba(30, 55, 215, 0.50);
+}
+.button-secondary:active{
+    background: rgba(30, 55, 215, 0.68);
+}
+.button-secondary:focus{
+    border: 2px solid var(--Off-White);
+}
+.link-button{
+    display: flex;
+    align-items: center;
+}
+.link-button a{
+    color: var(--Soft-Blue);
+    margin-right: 8px;
+}
+.link-button svg{
+    fill: var(--Soft-Blue);
+    width: 30px;
+    height: 30px;
+}
+.link-button a,
+.link-button svg {
+    transition: color 0.3s ease, fill 0.3s ease;
+}
+.link-button:hover a {
+    color: rgba(84, 104, 231, 0.80);
+}
+.link-button:hover svg {
+    fill: rgba(84, 104, 231, 0.80);
+}
+
+/*--email--*/
+.email-container{
+    position: relative;
+    display: inline-block;
+    flex-grow: 1;
+}
+.email-container input{
+    padding: 11px 16px;
+    width:298px;
+    border-radius: 4px;
+    height: 100%;
+    border: 2px solid var(--Grayish-Blue);
+}
+.email-container .fa-solid{
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--Desaturated-Blue);
+    cursor: pointer;
+}
+.email-container input::placeholder{
+    color: var(--Desaturated-Blue);
+}
+
+/*--navbar--*/
+nav h1, .logo h1{
+    color: var(--Off-White);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -1px;
+}
+nav h1 span,  .logo h1 span{
+    color: var(--Soft-Blue);
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -1.04px;
+}
+nav{
+    top: 0;
+    width: 100%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 56px;
+}
+nav ul li:first-child{
+    margin-left: 0;
+}
+nav ul li a{
+    display: block;
+    color: var(--Off-White);
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px var(--shadow);
+}
+nav .fa-solid{
+    color: var(--Off-White);
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+}
+.navbar .button-secondary, .navbar .button-secondary:active,
+.navbar .button-secondary:focus, .navbar .button-secondary:hover{
+    color: var(--white);
+}
+/*--header--*/
+#header{
+    background: radial-gradient(70% 140% at 4.91% 53.92%, #232340 33.46%, rgba(22, 22, 40, 0.60) 58.72%, rgba(0, 0, 0, 0.02) 100%), radial-gradient(35.82% 25.27% at 85.43% 4.19%, rgba(0, 0, 0, 0.28) 16.15%, rgba(0, 0, 0, 0.00) 84.53%), radial-gradient(26.75% 26.3% at 69.9% -0.97%, rgba(0, 0, 0, 0.28) 15.16%, rgba(0, 0, 0, 0.00) 79.3%), radial-gradient(33.92% 29.06% at 63.41% -3.63%, rgba(0, 0, 0, 0.28) 22.94%, rgba(0, 0, 0, 0.00) 84.89%), radial-gradient(48.8% 31.27% at 53.79% 2.3%, rgba(0, 0, 0, 0.28) 15.16%, rgba(0, 0, 0, 0.00) 84.82%), url(assets/image/Landing_Page/christina-wocintechchat-com-L85a1k-XqH8-unsplash\ 1.png), lightgray 50% / cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#header .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 56px;
+}
+.header-button{
+    display: flex;
+    align-self: stretch;
+    gap: 16px;
+    max-width:563px;
+}
+.header-text h1, .header-text p{
+    color: var(--Off-White);
+}
+.header-text h1{
+    width: 60%;
+}
+.header-text p{
+    width: 35%;
+}
+/*--mockup section--*/
+#mockup{
+    width:100%;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+#mockup .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    padding-right: 0;
+    margin: 0 auto;
+    gap: 56px;
+}
+.mockup-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    align-self: stretch;
+}
+.mockup-pict img{
+    height: 654px;
+    width: auto;
+}
+/*info-section*/
+.info-section-left .container, .info-section-right .container{
+    max-width: 1440px;
+    padding: 60px 140px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:120px;
+}
+.info-pict{
+    position: relative;
+    display: inline-block;
+    max-width: 565px;
+}
+.info-pict .main-pict{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center
+}
+#sec1 .info-pict .float img{
+    position: absolute;
+    top:24px;
+    right: 24px;
+    width: 240px;
+    height: auto;
+    z-index: 10;
+}
+#sec2  .info-pict .float.item1{
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    bottom: 24px;
+    right: 24px;
+    width: 190px;
+    height: auto;
+    z-index: 10;
+}
+#sec3 .info-pict .float.item2{
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    bottom: 24px;
+    left: 24px;
+    width: 190px;
+    height: auto;
+    z-index: 10;
+}
+#sec2  .info-pict .float.item1 img, #sec3  .info-pict .float.item2 img{
+    width:100%;
+    height: auto;
+}
+
+
+.info-section-right .container{
+    flex-direction: row-reverse;
+}
+
+/*--What People Say About Team*/
+#review{
+    margin: 160px 0;
+}
+#review .container{
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    overflow: hidden;
+}
+#review .tittle{
+    text-align: center;
+}
+.carousel{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.carousel .content-review{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding-bottom: 52px;
+    transition: transform 0.5s ease-in-out;
+    user-select: none; 
+}
+.review-card{
+    display: flex;
+    width: 367px;
+    min-width: 260px;
+    padding: 44px 33px;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--white);
+    box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+    cursor: grab;
+    user-select: none; 
+}
+.star svg{
+    fill: var(--Light-Orange);
+    stroke: var(--Light-Orange); 
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    align-self: stretch;
+}
+.user-profile .text-user{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+.img-user{
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-user img{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+.review-card .paragraph{
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+.button-review{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap:24px;
+    transform: translateY(-50%);
+}
+.button-arrow svg{
+    stroke:var(--Soft-Blue);
+    stroke-width:2; 
+    stroke-linecap:round; 
+    stroke-linejoin:round;
+    cursor: pointer;
+}
+
+/*--footer--*/
+#footer{
+    background: var(--Dark-Blue);
+    padding-top: 73px;
+}
+#footer .container, #copyright .container{
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .container{
+    padding-bottom: 171px;
+}
+#footer p, #copyright p{
+    color: var(--Off-White);
+}
+#footer a{
+    text-decoration: none;
+    color: var(--Off-White);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.14px;
+}
+.right-footer{
+    display: flex;
+    gap:48px;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    padding-top: 22px;
+}
+.footer-email{
+    padding-top: 22px;
+}
+#footer .email-container input{
+    width: 100%;
+}
+.footer-email .caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.footer-info .info, .footer-email{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:16px;
+}
+.footer-info .caption p{
+    width: 100%;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 56px;
+}
+.footer-info .caption{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+#footer h3{
+    color: var(--Soft-Blue);
+}
+#footer .email-container input{
+    background: rgba(245, 245, 245, 0.24);
+    border: none;
+}
+#footer .email-container input::placeholder, #footer i{
+    color: var(--Off-White);
+}
+.email-container .fa-solid{
+    right: 16px;
+}
+/*--copyright*/
+#copyright{
+    background: var(--Dark-Blue);
+    padding-bottom: 37px;
+}
+
+
+/*--------CSS FOR SMALL SCREEN -------*/
+
+/* Media query untuk tablet maximum*/
+@media only screen and (max-width: 1024px){
+    .container{
+        padding: 0 60px;
+    }
+    .container1 .navbar{
+        padding: 0 60px;
+    }
+    nav ul li{
+        margin-left: 16px;
+    }
+    .header-text h1{
+        width: 70%;
+    }
+    .header-text p{
+        width: 50%;
+    }
+    #mockup .container {
+        gap:48px
+    }
+    .info-section-left .container, .info-section-right .container{
+        padding: 60px 60px;
+        gap:64px;
+    }
+    #footer .container{
+        flex-wrap: wrap;
+    }
+    #footer .logo{
+        margin-bottom: 48px;
+    }
+    .footer-info{
+        padding-top: 0;
+        padding-bottom: 26px;
+    }
+    #footer .email-container input{
+        width: 100%;
+    }
+    .footer-info {
+        padding-top: 22px;
+        gap:24px;
+    }
+    
+}
+
+/* Media query untuk tablet */
+@media only screen and (max-width: 744px){
+    .header-text h1{
+        width: 100%;
+    }
+    .header-text p{
+        width: 90%;
+    }
+    #mockup .container {
+        flex-direction: column-reverse;
+        gap:56px
+    }
+    .mockup-pict{
+        width:100%;
+    }
+    .mockup-text{
+        padding-right: 60px;
+    }
+    .info-section-left .container, .info-section-right .container{
+        padding: 32px 0;
+        padding-left: 0;
+        gap:24px;
+    }
+    .info-section-right .container{
+        padding-left: 60px;
+        padding-right: 0;
+    }
+    .info-section-right .mockup-text{
+        padding-right: 0px;
+    }
+    .info-pict{
+        max-width: 352px;
+    }
+    #sec1 .info-pict .float img{
+        width: 120px;
+        height: auto;
+    }
+    #sec2 .info-pict .float.item1, #sec3 .info-pict .float.item2{
+        width: 120px;
+    }
+    #footer .email-container input{
+        width: 268px;
+    }
+    .right-footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* Media query untuk mobile Landscape*/
+@media only screen and (max-width: 568px) {
+    .container {
+        padding: 0 30px;
+    }
+    .container1 .navbar{
+        padding: 0 30px;
+    }
+    nav .fa-solid{
+        display: block;
+    }
+    nav ul{
+        background: var(--Dark-Blue);
+        position: fixed;
+        top:0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        padding-top: 48px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 24px;
+    }
+    nav ul li:first-child{
+        margin-left: 24px;
+    }
+    nav ul li a{
+        text-align: center;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        cursor: pointer;
+    }
+    .header-text p{
+        width: 100%;
+    }
+    .email-container .fa-solid{
+        right: 16px;
+    }
+    .header-button{
+        gap:12px;
+    }
+    #mockup .container {
+        gap:48px;
+    }
+    .mockup-pict{
+        width:100%;
+    }
+    .mockup-text{
+        padding-right: 30px;
+    }
+    .info-section-right .container{
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    .review-card{
+        width: 260px;
+    }
+    .footer-info{
+        gap:48px;
+    }  
+}
+/* Media query untuk mobile Potrait*/
+@media only screen and (max-width: 544px) {
+    h1{
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 42px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .header-button{
+        flex-wrap: wrap;
+    }
+    .email-container input{
+        width: 100%;
+    }
+    .header-button .button-primary{
+        width: 100%;
+    }
+    .header-text p{
+        width: 100%;
+    }
+    .info-section-left .container,.info-section-right .container{
+        flex-wrap: wrap;
+        padding: 32px 0;
+        padding-left: 0;
+        padding-right: 24px;
+        gap:24px;
+    }
+    .info-section-left .mockup-text{
+        padding-left: 24px;
+        padding-right: 0px;
+    }
+    .info-section-right .mockup-text{
+        padding-left: 0;
+        padding-right: 24px;
+    }
+    #sec1 .info-pict .float img{
+        width: 105px;
+        height: auto;
+    }
+    #sec2 .info-pict .float.item1, #sec3 .info-pict .float.item2{
+        width: 105px
+    }
+    .info-section-right .container{
+        padding-left: 24px;
+        padding-right: 0;
+    }
+    #footer .container{
+        flex-direction: column;
+    }
+    .footer-info{
+        flex-direction: column;
+    }
+    .right-footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    #footer .email-container input{
+        width: 100%;
+    }
+}

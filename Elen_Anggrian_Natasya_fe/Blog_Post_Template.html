@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/Style_Blog.css">
+        <script src="https://kit.fontawesome.com/2acd498ca4.js" crossorigin="anonymous"></script>
+        <title>Elen_Blog Post Template</title>
+    </head>
+<body>
+    <!-- Navbar -->
+    <div class="container1">
+        <div class="navbar">
+            <nav>
+                <h1>team<span>.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="">Product</a></li>
+                    <li><a href="Blog_1.html">Blog</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="" class="button-secondary">Get Access</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <!-- Header -->
+    <div id="header-blogpost">
+        <div class="container">
+            <div class="header-text">
+                <h1>
+                    Data exported by Team Cloud organization administrators contained private files
+                </h1>
+                <div class="card-author">
+                    <div class="img-user">
+                        <img src="assets/image/Blog/user17.png">
+                    </div>
+                    <div class="caption">
+                        <p>Mark Brooklyn</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="caption">
+                        <p>June 14, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- blog content Section -->
+    <div id="pict-blogpost">
+        <div class="container">
+            <img src="assets/image/Blog/img19.png">
+        </div>
+    </div>
+    <div id="text-blogpost">
+        <div class="container">
+            <div class="paragraph">
+                <p>
+                    Administrators of Team Cloud organizations can export public data from their organization via the organization settings menu. The exports include all the data that appears in public streams, and can be used to migrate from Team Cloud to self-hosting Team. Note that exporting private data is a separate process that requires contacting Team Support.
+                    <br><br>
+                    Due to a bug in the public export code, exports of public data contained all uploaded files, even those from private messages and private streams. This may have allowed organization owners or administrators to extract uploaded files that they were not otherwise allowed to access. The content of non-public messages was never included in public exports.
+                    <br><br>
+                    This bug has existed since the public export feature was implemented in August 2019. We have deleted all existing Team Cloud exports from our servers, and will be making changes to auto-expire all exports after 7 days in the future. This bug was fixed for self-hosted users in the Team Server 5.4 release.
+                    <br><br>
+                    We have notified by email all administrators and users in non-deactivated Team Cloud organizations who may have been impacted by this bug. As many organizations have never exported their data, most Team Cloud users were not affected.
+                    <br><br>
+                    would like to thank Antoine Benoist for bringing this issue to our attention.
+                </p>
+            </div> 
+            <div class="card-writer">
+                <div class="img-author">
+                    <img src="assets/image/Blog/user17.png">
+                </div>
+                <div class="caption">
+                    <h4>Written By</h4>
+                    <h3>Mark Brooklyn</h3>
+                    <p>COO at Team. Author of the upcoming book on Team Management and Leadership.</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!--coment section-->
+    <div id="coment-section">
+        <div class="container">
+            <div class="paragraph">
+                <p>Join the conversation</p>
+            </div>
+            <div class="coment">
+                <div class="img-author">
+                    <img src="assets/image/Blog/user19.png">
+                </div>
+                <textarea name="coment-section" id="coment-section" cols="30" rows="10" placeholder="Comments"></textarea>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="logo">
+                <h1>team<span>.</span></h1>
+                <div class="caption">
+                    <p>Collaboration platform<br>for mordern team </p>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="footer-info">
+                    <div class="info">
+                        <h3>
+                            Company
+                        </h3>
+                        <div class="caption">
+                            <a href="">Product</a>
+                            <a href="Blog_1.html">Blog</a>
+                            <a href="">Support</a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>
+                            Features
+                        </h3>
+                        <div class="caption">
+                            <a href="">Screen Sharing</a>
+                            <a href="">iOS & Android Apps</a>
+                            <a href="">File Sharing</a>
+                            <a href="">User Managment</a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>
+                            Contact Us
+                        </h3>
+                        <div class="caption">
+                            <p>info@teamapp.com</p>
+                            <p>1-800-200-300</p>
+                            <p>1010 Sunset Blv.<br>Palo Alto, California</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-email">
+                    <h3>
+                        Stay up to date
+                    </h3>
+                    <div class="caption">
+                        <p>Subscribe to our newseller</p>
+                        <div class="email-container">
+                            <input type="email" name="email" id="hero" placeholder="Email">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div id="copyright">
+        <div class="container">
+            <div class="caption">
+                <p>© Copyright Team Inc.</p>
+            </div>
+        </div>
+
+    </div>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
