@@ -512,7 +512,6 @@ button {
         width: 50%; } }
     @media only screen and (max-width: 768px) {
       .hero__content {
-        width: 90%;
         justify-items: center;
         text-align: center; } }
   .hero__text {
@@ -643,8 +642,7 @@ button {
   @media only screen and (max-width: 768px) {
     .about__text {
       align-items: center;
-      text-align: center;
-      width: 90%; } }
+      text-align: center; } }
 
 .section-pricing {
   position: relative;
