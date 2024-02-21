@@ -11,10 +11,14 @@
         padding: 2rem;
     }
 
+    & h3 {
+        margin-bottom: 4px;
+    }
+
     &__price {
         position: absolute;
-        top: 2rem;
-        right: 2.5rem;
+        top: 4rem;
+        right: 4rem;
 
         font-size: 4rem;
         font-weight: 500;

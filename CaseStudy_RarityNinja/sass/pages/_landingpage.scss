@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    gap: 9vw;
+    gap: 12.8rem;
     background-color: $color-grey-light-1;
 
     @include respond(large-mobile) {
@@ -15,7 +15,7 @@
 
 .about {
     &__img {
-        width: 52%;
+        width: 75%;
         position: relative;
         display: flex;
         align-items: center;
@@ -54,6 +54,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 8.8rem 25.6rem;
 }
 
 .pricing {
@@ -62,7 +63,6 @@
         flex-direction: column;
         align-items: center;
         gap: 1.6rem;
-
         animation: moveInBottom .8s ease-out;
     }
 
@@ -73,6 +73,7 @@
         background-color: $color-grey-light-3;
         border-radius: 40px;
         padding: 6px;
+        margin-bottom: 6.4rem;
 
         animation: moveInBottom .8s ease-out .3s;
         animation-fill-mode: backwards;

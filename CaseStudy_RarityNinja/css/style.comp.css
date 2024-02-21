@@ -118,25 +118,25 @@ button {
       margin-bottom: 6rem !important; } }
 
 .u-margin-bottom-big {
-  margin-bottom: 6.4rem !important; }
-  @media only screen and (max-width: 992px) {
-    .u-margin-bottom-big {
-      margin-bottom: 4rem !important; } }
-
-.u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
   @media only screen and (max-width: 992px) {
-    .u-margin-bottom-medium {
+    .u-margin-bottom-big {
       margin-bottom: 3rem !important; } }
 
-.u-margin-bottom-small {
+.u-margin-bottom-medium {
   margin-bottom: 2.4rem !important; }
+  @media only screen and (max-width: 992px) {
+    .u-margin-bottom-medium {
+      margin-bottom: 2rem !important; } }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.6rem !important; }
 
 .u-margin-bottom-smallest {
-  margin-bottom: 1rem !important; }
+  margin-bottom: 0.8rem !important; }
 
 .padding-all {
-  padding: 6rem 16rem; }
+  padding: 8rem 16rem; }
   @media only screen and (max-width: 1200px) {
     .padding-all {
       padding: 4rem 10rem; } }
@@ -198,8 +198,11 @@ button {
   outline: none;
   box-shadow: 0 1rem 2rem rgba(35, 29, 79, 0.4); }
 
+.btn-secondery__card {
+  padding: 1.6rem 2.4rem; }
+
 .btn-primer, .btn-primer:link, .btn-primer:visited {
-  padding: 1.8rem 2.4rem;
+  padding: 1.6rem 2.4rem;
   border-radius: 1.6rem;
   transition: all .2s;
   position: relative;
@@ -216,10 +219,11 @@ button {
   box-shadow: 0 1rem 2rem rgba(35, 29, 79, 0.4); }
 
 .btn-primer__card {
-  padding: 1.2rem 2.4rem;
-  transition: all .2s; }
+  transition: all .2s;
+  border: 1px solid rgba(235, 235, 235, 0); }
   .btn-primer__card:hover {
-    background-color: #FFBB1F; }
+    background-color: #FFBB1F;
+    border: 1px solid rgba(235, 235, 235, 0); }
   .btn-primer__card:active, .btn-primer__card:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(35, 29, 79, 0.4); }
@@ -316,10 +320,12 @@ button {
   @media only screen and (max-width: 576px) {
     .card {
       padding: 2rem; } }
+  .card h3 {
+    margin-bottom: 4px; }
   .card__price {
     position: absolute;
-    top: 2rem;
-    right: 2.5rem;
+    top: 4rem;
+    right: 4rem;
     font-size: 4rem;
     font-weight: 500;
     line-height: 6rem;
@@ -409,7 +415,8 @@ button {
     .logo__name--dark {
       color: #001129; }
     .logo__name--light {
-      color: #fff; }
+      color: #fff;
+      margin-left: 0; }
 
 .footers {
   position: relative;
@@ -439,9 +446,8 @@ button {
   align-items: center;
   width: 100%;
   flex-direction: row;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 3.2rem;
-  padding-bottom: 3.2rem; }
+  border-top: 1.5px solid rgba(255, 255, 255, 0.1);
+  padding: 3.2rem 16rem 4rem 16rem; }
   .copyright p {
     color: #fff;
     opacity: 1; }
@@ -482,7 +488,7 @@ button {
   display: flex;
   justify-content: space-between;
   height: 9.6rem;
-  padding: 24px 6.4rem; }
+  padding: 2.4rem 6.4rem; }
   @media only screen and (max-width: 576px) {
     .navigation {
       padding: 24px 2.4rem; } }
@@ -501,12 +507,18 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem; }
+  gap: 1rem;
+  padding: 2.9rem 12.4rem 7.1rem 16rem; }
   .hero__content {
     display: grid;
     justify-items: start;
-    width: 42%;
+    width: 37.64vw;
     animation: moveInLeft .8s ease-out; }
+    .hero__content p {
+      width: 26.52vw; }
+      @media only screen and (max-width: 768px) {
+        .hero__content p {
+          width: 100%; } }
     @media only screen and (max-width: 992px) {
       .hero__content {
         width: 50%; } }
@@ -613,7 +625,7 @@ button {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  gap: 9vw;
+  gap: 12.8rem;
   background-color: #F5F9FF; }
   @media only screen and (max-width: 768px) {
     .section-about {
@@ -621,7 +633,7 @@ button {
       gap: 3rem; } }
 
 .about__img {
-  width: 52%;
+  width: 75%;
   position: relative;
   display: flex;
   align-items: center;
@@ -650,7 +662,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 8.8rem 25.6rem; }
 
 .pricing__heading {
   display: flex;
@@ -666,6 +679,7 @@ button {
   background-color: #F7F7F7;
   border-radius: 40px;
   padding: 6px;
+  margin-bottom: 6.4rem;
   animation: moveInBottom .8s ease-out .3s;
   animation-fill-mode: backwards; }
 

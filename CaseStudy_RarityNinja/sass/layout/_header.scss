@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     height: 9.6rem;
-    padding: 24px 6.4rem;
+    padding: 2.4rem 6.4rem;
 
     @include respond(mobile) {
         padding: 24px 2.4rem;
@@ -33,15 +33,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+
+    padding: 2.9rem 12.4rem 7.1rem 16rem;
 
     
     &__content {
         display: grid;
         justify-items: start;
-        width: 42%;
+        width: 37.64vw;
 
         animation: moveInLeft .8s ease-out;
+
+        & p {
+            width: 26.52vw;
+
+            @include respond(large-mobile) {
+                width: 100%;
+            }
+        }
 
         @include respond(tablet) {
             width: 50%;
