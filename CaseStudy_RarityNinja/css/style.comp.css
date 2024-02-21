@@ -139,16 +139,13 @@ button {
   padding: 8rem 16rem; }
   @media only screen and (max-width: 1200px) {
     .padding-all {
-      padding: 4rem 10rem; } }
+      padding: 6rem 10rem; } }
   @media only screen and (max-width: 992px) {
     .padding-all {
-      padding: 3.2rem 6.4rem; } }
-  @media only screen and (max-width: 576px) {
+      padding: 5rem 6.4rem; } }
+  @media only screen and (max-width: 768px) {
     .padding-all {
-      padding: 3rem 2.4rem; } }
-  @media only screen and (max-width: 576px) {
-    .padding-all {
-      padding: 3rem 2rem; } }
+      padding: 4rem 2.4rem; } }
 
 .center-text {
   text-align: center; }
@@ -448,6 +445,15 @@ button {
   flex-direction: row;
   border-top: 1.5px solid rgba(255, 255, 255, 0.1);
   padding: 3.2rem 16rem 4rem 16rem; }
+  @media only screen and (max-width: 1200px) {
+    .copyright {
+      padding: 6rem 10rem; } }
+  @media only screen and (max-width: 992px) {
+    .copyright {
+      padding: 5rem 6.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .copyright {
+      padding: 4rem 2.4rem; } }
   .copyright p {
     color: #fff;
     opacity: 1; }
@@ -489,7 +495,7 @@ button {
   justify-content: space-between;
   height: 9.6rem;
   padding: 2.4rem 6.4rem; }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .navigation {
       padding: 24px 2.4rem; } }
   @media only screen and (max-width: 992px) {
@@ -509,6 +515,17 @@ button {
   align-items: center;
   gap: 1rem;
   padding: 2.9rem 12.4rem 7.1rem 16rem; }
+  @media only screen and (max-width: 1200px) {
+    .hero {
+      padding: 6rem 10rem; } }
+  @media only screen and (max-width: 992px) {
+    .hero {
+      padding: 5rem 6.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .hero {
+      padding: 4rem 2.4rem;
+      flex-direction: column;
+      height: min-content; } }
   .hero__content {
     display: grid;
     justify-items: start;
@@ -614,10 +631,6 @@ button {
           bottom: 14.5vw;
           width: 14vw;
           height: 14vw; } }
-  @media only screen and (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      height: min-content; } }
 
 .section-about {
   position: relative;
@@ -664,6 +677,15 @@ button {
   align-items: center;
   flex-direction: column;
   padding: 8.8rem 25.6rem; }
+  @media only screen and (max-width: 1200px) {
+    .section-pricing {
+      padding: 6rem 10rem; } }
+  @media only screen and (max-width: 992px) {
+    .section-pricing {
+      padding: 5rem 6.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .section-pricing {
+      padding: 4rem 2.4rem; } }
 
 .pricing__heading {
   display: flex;

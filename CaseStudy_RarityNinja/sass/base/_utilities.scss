@@ -31,20 +31,17 @@
     padding: 8rem 16rem;
 
     @include respond(mini-desktop) {
-        padding: 4rem 10rem;
+        padding: 6rem 10rem;
     }
 
     @include respond(tablet) {
-        padding: 3.2rem 6.4rem;
+        padding: 5rem 6.4rem;
     }
 
-    @include respond(mobile) {
-        padding: 3rem 2.4rem;
+    @include respond(large-mobile) {
+        padding: 4rem 2.4rem;
     }
 
-    @include respond(mobile) {
-        padding: 3rem 2rem;
-    }
 }
 
 .center-text {
