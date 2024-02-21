@@ -39,6 +39,10 @@
     @include respond(mobile) {
         padding: 3rem 2.4rem;
     }
+
+    @include respond(mobile) {
+        padding: 3rem 2rem;
+    }
 }
 
 .center-text {
