@@ -1,0 +1,220 @@
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $default-font-size;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-text {
+    &,
+    &:link,
+    &:visited {
+        padding: 1.2rem 2.4rem;
+        border-radius: 1.6rem;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        color: $color-primary;
+        background-color: transparent;
+    }
+
+    &:hover {
+        color: $color-secondary-dark;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+}
+
+.btn-secondery {
+    &,
+    &:link,
+    &:visited {
+        padding: 1.2rem 2.4rem;
+        border-radius: 1.6rem;
+        transition: all .2s;
+        position: relative;
+        border: 1px solid rgba($color-grey-light-2, 1);
+        cursor: pointer;
+        color: $color-secondary-dark;
+        background-color: transparent;
+    }
+
+    &:hover {
+        border: 1px solid rgba($color-grey-light-2, 0);
+        background-color: $color-secondary-dark;
+        color: $color-white;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+}
+
+.btn-primer {
+    &,
+    &:link,
+    &:visited {
+        padding: 1.8rem 2.4rem;
+        border-radius: 1.6rem;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        color: $color-white;
+        background-color: $color-secondary-dark;
+    }
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+
+    &__card {
+        padding: 1.2rem 2.4rem;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-yellow;
+        }
+    
+        &:active,
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+        }
+    }
+}
+
+.download__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-white;
+    margin-right: 1rem;
+}
+
+.scroll-btn {
+    &,
+    &:link,
+    &:visited {
+        padding: 1.6rem;
+        border-radius: 50%;
+        border: 1px solid $color-grey-light-2;
+
+        background-color: $color-white;
+        cursor: pointer;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-grey-light-2;
+        color: $color-white;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+}
+
+.scroll__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: currentColor;
+}
+
+.scroll-btn {
+    color: rgba($color-primary-light, .7); 
+
+    &,
+    &:link,
+    &:visited {
+        padding: 1.6rem;
+        border-radius: 50%;
+        border: 1px solid $color-grey-light-2;
+
+        background-color: $color-white;
+        cursor: pointer;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary-light;
+        color: $color-white;
+        border: 1px solid $color-primary-light;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+}
+
+.btn-switch {
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.2rem;
+        line-height: 1.62rem;
+        padding: 1.4rem 2.8rem;
+        border-radius: 49px;
+        transition: all .2s;
+        position: relative;
+        cursor: pointer;
+        color: $color-secondary-dark;
+        background-color: transparent;
+        border: none;
+    }
+
+    &:active,
+    &:focus,
+    &--active {
+        outline: none;
+        background-color: $color-white;
+        box-shadow: 0 .5rem 1rem rgba($color-black, .1);
+        border: none;
+    }
+}
+
+.btn-footer {
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.4rem;
+        line-height: 2.38rem;
+        font-weight: 400;
+        border-radius: 1.6rem;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        color: $color-white;
+        background-color: transparent;
+    }
+
+    &:hover {
+        color: $color-secondary-light;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+}

@@ -1,0 +1,112 @@
+.section-about {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 9vw;
+    background-color: $color-grey-light-1;
+
+    @include respond(large-mobile) {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+}
+
+.about {
+    &__img {
+        width: 52%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        animation: moveInLeft .8s ease-out;
+        
+        @include respond(large-mobile) {
+            width: 70%;
+        }
+
+        &--1 {
+            width: 100%;
+            height: 100%;   
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        animation: moveInRight .8s ease-out .3s;
+        animation-fill-mode: backwards;
+
+        @include respond(large-mobile) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+.section-pricing {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricing {
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+
+        animation: moveInBottom .8s ease-out;
+    }
+
+    &__switch {
+        display: flex;
+        gap: 1.6rem;
+        justify-content: center;
+        background-color: $color-grey-light-3;
+        border-radius: 40px;
+        padding: 6px;
+
+        animation: moveInBottom .8s ease-out .3s;
+        animation-fill-mode: backwards;
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(30rem, 45rem));
+        gap: 3.2rem;
+        max-width: 95rem;
+
+        animation: moveInBottom .8s ease-out .6s;
+        animation-fill-mode: backwards;
+
+        @include respond(large-mobile) {
+            grid-template-columns: 50vw;
+        }
+
+        @include respond(mobile) {
+            grid-template-columns: 70vw;
+        }
+    }
+}
+
+.extension-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    animation: moveInBottom .8s ease-out;
+
+    p {
+        opacity: 0.5;
+    }
+}

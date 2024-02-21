@@ -1,0 +1,80 @@
+.footers {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: $color-primary-light;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 2.4rem;
+    }
+}
+
+.copyright {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    border-top: 1px solid rgba($color-white, .1);
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+
+    & p {
+        color: $color-white;
+        opacity: 1;
+    }
+
+    &__socmed {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 4rem;
+        color: $color-white;
+
+        @include respond(mobile) {
+            gap: 2rem;
+        }
+
+        &--link {
+            text-decoration: none;
+            color: $color-white;
+            display: flex;
+
+            &:hover {
+                color: $color-secondary-light;
+            }
+        }
+
+        &--icon {
+            width: 24px;
+            height: 24px;
+            stroke: currentColor;
+
+            @include respond(mobile) {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    @include respond(mobile) {
+        gap: 2rem;
+    }
+}

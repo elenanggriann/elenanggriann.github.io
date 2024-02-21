@@ -1,0 +1,33 @@
+//MEDIA QUERY MANAGER
+
+/*
+Large Desktop : above 1200px
+Mini Desktop : 1199px - 992px
+Tablet : 991px - 768px
+Large mobile : 767px - 576px
+Mobile : 575px - 320px
+
+$breakpoint argument choices
+- mini-desktop
+- tablet
+- large-mobile
+- mobile
+
+ORDER: Base + typography > general layout + grid > page layout > components
+*/     
+
+//MIXINS FOR RESPONSIVE
+@mixin respond($breakpoint) {
+    @if $breakpoint == mobile {
+        @media only screen and (max-width: 576px) { @content };
+    }
+    @if $breakpoint == large-mobile {
+        @media only screen and (max-width: 768px) { @content }; 
+    }
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 992px) { @content };
+    }
+    @if $breakpoint == mini-desktop {
+        @media only screen and (max-width: 1200px) { @content };
+    }
+}
