@@ -48,6 +48,7 @@
         }
 
         @include respond(large-mobile) {
+            width: 100%;
             justify-items: center;
             text-align: center;
         }

@@ -270,7 +270,7 @@ button {
 
 .btn-switch, .btn-switch:link, .btn-switch:visited {
   font-size: 12px;
-  line-height: 1.62rem;
+  line-height: 16.2px;
   padding: 1.4rem 2.8rem;
   border-radius: 49px;
   transition: all .2s;
@@ -512,6 +512,7 @@ button {
         width: 50%; } }
     @media only screen and (max-width: 768px) {
       .hero__content {
+        width: 100%;
         justify-items: center;
         text-align: center; } }
   .hero__text {
