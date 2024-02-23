@@ -2,13 +2,14 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    gap: 8px;
 
     &__icon {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $color-primary;
+        background-color: $color-primary-light;
         height: 22px;
         width: 22px;
         padding: 4px;
@@ -26,7 +27,6 @@
         font-size: 20px;
         line-height: 28px;
         font-weight: 700;
-        margin-left: 8px;
 
         @include respond(mobile) {
             margin-left: 4px;
