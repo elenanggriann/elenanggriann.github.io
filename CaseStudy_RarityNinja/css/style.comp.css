@@ -520,7 +520,7 @@ button {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        right: 0;
+        right: -60vw;
         top: 0;
         padding: 24px 24px 0 0;
         transition: all .5s; }
