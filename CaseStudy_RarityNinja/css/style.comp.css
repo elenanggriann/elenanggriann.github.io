@@ -510,23 +510,47 @@ button {
     @media only screen and (max-width: 992px) {
       .navigation__list {
         gap: 1rem; } }
+    @media only screen and (max-width: 576px) {
+      .navigation__list {
+        z-index: 100;
+        background-color: #002352;
+        position: fixed;
+        width: 60vw;
+        height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        padding: 24px 24px 0 0;
+        transition: all .5s; }
+        .navigation__list button {
+          color: #fff;
+          border: none; } }
   .navigation__toggle {
     position: relative;
     align-self: center;
-    width: 0;
-    height: 0; }
+    display: none; }
     @media only screen and (max-width: 576px) {
       .navigation__toggle {
         width: 4rem;
-        height: 100%; } }
+        height: 100;
+        display: block; } }
 
 .toggle {
-  width: 100%;
-  height: 100%; }
+  display: none; }
   .toggle__menu {
-    display: none; }
+    width: 4rem;
+    height: 4rem;
+    display: block; }
   .toggle__close {
-    display: none; }
+    fill: #fff;
+    stroke: #fff;
+    align-self: end;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: block;
+    margin-bottom: 2rem; }
 
 .hero {
   display: flex;
