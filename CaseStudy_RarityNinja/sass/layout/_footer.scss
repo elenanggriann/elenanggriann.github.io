@@ -21,6 +21,13 @@
         align-items: center;
         flex-direction: row;
         gap: 2.4rem;
+
+        & a {
+
+            @include respond(mobile) { 
+                font-size: 12px !important;
+            }
+        }
     }
 }
 

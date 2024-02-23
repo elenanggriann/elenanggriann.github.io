@@ -456,6 +456,9 @@ button {
     align-items: center;
     flex-direction: row;
     gap: 2.4rem; }
+    @media only screen and (max-width: 576px) {
+      .footer__nav a {
+        font-size: 12px !important; } }
 
 .copyright {
   position: relative;
@@ -544,7 +547,8 @@ button {
         transition: all .5s; }
         .navigation__list button {
           color: #fff;
-          border: none; } }
+          border: none;
+          font-size: 12px; } }
   .navigation__toggle {
     position: relative;
     align-self: center;
