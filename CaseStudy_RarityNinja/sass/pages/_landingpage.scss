@@ -13,15 +13,15 @@
     }
 }
 
+
 .about {
+
     &__img {
         width: 75%;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-
-        animation: moveInLeft .8s ease-out;
         
         @include respond(large-mobile) {
             width: 70%;
@@ -37,9 +37,6 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
-        animation: moveInRight .8s ease-out .3s;
-        animation-fill-mode: backwards;
 
         @include respond(large-mobile) {
             align-items: center;
@@ -75,7 +72,6 @@
         flex-direction: column;
         align-items: center;
         gap: 1.6rem;
-        animation: moveInBottom .8s ease-out;
     }
 
     &__switch {
@@ -87,8 +83,6 @@
         padding: 6px;
         margin-bottom: 6.4rem;
 
-        animation: moveInBottom .8s ease-out .3s;
-        animation-fill-mode: backwards;
     }
 
     &__card {
@@ -96,9 +90,6 @@
         grid-template-columns: repeat(2, minmax(30rem, 45rem));
         gap: 3.2rem;
         max-width: 95rem;
-
-        animation: moveInBottom .8s ease-out .6s;
-        animation-fill-mode: backwards;
 
         @include respond(large-mobile) {
             grid-template-columns: 50vw;
@@ -110,14 +101,12 @@
     }
 }
 
-.extension-section {
+.section-extension {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    animation: moveInBottom .8s ease-out;
 
     p {
         opacity: 0.5;

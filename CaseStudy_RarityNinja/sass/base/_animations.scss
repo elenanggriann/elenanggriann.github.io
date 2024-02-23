@@ -33,3 +33,26 @@
         transform: translate(0);
     }
 }
+
+.animated-left {
+    animation: moveInLeft .8s ease-out;
+}
+
+.animated-right {
+    animation: moveInRight .8s ease-out .3s;
+    animation-fill-mode: backwards;
+}
+
+.animated-down1 {
+    animation: moveInBottom .8s ease-out;
+}
+
+.animated-down2 {
+    animation: moveInBottom .8s ease-out .3s;
+    animation-fill-mode: backwards;
+}
+
+.animated-down3 {
+    animation: moveInBottom .8s ease-out .6s;
+    animation-fill-mode: backwards;
+}

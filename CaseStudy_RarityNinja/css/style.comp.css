@@ -37,6 +37,24 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1;
     transform: translate(0); } }
 
+.animated-left {
+  animation: moveInLeft .8s ease-out; }
+
+.animated-right {
+  animation: moveInRight .8s ease-out .3s;
+  animation-fill-mode: backwards; }
+
+.animated-down1 {
+  animation: moveInBottom .8s ease-out; }
+
+.animated-down2 {
+  animation: moveInBottom .8s ease-out .3s;
+  animation-fill-mode: backwards; }
+
+.animated-down3 {
+  animation: moveInBottom .8s ease-out .6s;
+  animation-fill-mode: backwards; }
+
 *,
 *::after,
 *::before {
@@ -695,8 +713,7 @@ button {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  animation: moveInLeft .8s ease-out; }
+  justify-content: center; }
   @media only screen and (max-width: 768px) {
     .about__img {
       width: 70%; } }
@@ -707,9 +724,7 @@ button {
 .about__text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  animation: moveInRight .8s ease-out .3s;
-  animation-fill-mode: backwards; }
+  align-items: flex-start; }
   @media only screen and (max-width: 768px) {
     .about__text {
       align-items: center;
@@ -736,8 +751,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.6rem;
-  animation: moveInBottom .8s ease-out; }
+  gap: 1.6rem; }
 
 .pricing__switch {
   display: flex;
@@ -746,17 +760,13 @@ button {
   background-color: #F7F7F7;
   border-radius: 40px;
   padding: 6px;
-  margin-bottom: 6.4rem;
-  animation: moveInBottom .8s ease-out .3s;
-  animation-fill-mode: backwards; }
+  margin-bottom: 6.4rem; }
 
 .pricing__card {
   display: grid;
   grid-template-columns: repeat(2, minmax(30rem, 45rem));
   gap: 3.2rem;
-  max-width: 95rem;
-  animation: moveInBottom .8s ease-out .6s;
-  animation-fill-mode: backwards; }
+  max-width: 95rem; }
   @media only screen and (max-width: 768px) {
     .pricing__card {
       grid-template-columns: 50vw; } }
@@ -764,12 +774,11 @@ button {
     .pricing__card {
       grid-template-columns: 70vw; } }
 
-.extension-section {
+.section-extension {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  animation: moveInBottom .8s ease-out; }
-  .extension-section p {
+  flex-direction: column; }
+  .section-extension p {
     opacity: 0.5; }
