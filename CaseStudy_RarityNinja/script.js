@@ -26,48 +26,6 @@ function switchFrequency(frequency) {
 }
 
 //animation section pricing and extension
-/*
-let sections = document.querySelectorAll('section');
-const left = document.querySelector('.about__img');
-const right = document.querySelector('.about__text');
-
-const down1 = document.querySelector('.pricing__heading');
-const down2 = document.querySelector('.pricing__switch');
-const down3 = document.querySelector('.pricing__card');
-
-// Menetapkan opacity 0 pada awalnya
-left.style.opacity = '0';
-right.style.opacity = '0';
-
-down1.style.opacity = '0';
-down2.style.opacity = '0';
-down3.style.opacity = '0';
-
-window.onscroll = () =>  {
-sections.forEach(section => {
-        let top = window.scrollY;
-        let offset = section.offsetTop - 600;
-        let height = section.offsetHeight;
-
-        if (top >= offset && top < offset + height) {
-            section.classList.add('show-animate');
-            left.style.opacity = '1';
-            right.style.opacity = '1';
-            
-            down1.style.opacity = '1';
-            down2.style.opacity = '1';
-            down3.style.opacity = '1';
-        
-            left.classList.add('animated-left');
-            right.classList.add('animated-right');
-
-            down1.classList.add('animated-down1');
-            down2.classList.add('animated-down2');
-            down3.classList.add('animated-down3');
-        }
-    })
-}*/
-
 let sections = document.querySelectorAll('section');
 const left = document.querySelector('.about__img');
 const right = document.querySelector('.about__text');
