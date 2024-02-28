@@ -1,13 +1,9 @@
-.header {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.navbar {
+    padding: 0;
+    margin: 0 auto;
+    background-color: $color-white;
 }
-
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    height: 9.6rem;
+#navigation {
     padding: 2.4rem 6.4rem;
 
     @include respond(large-mobile) {
@@ -17,80 +13,33 @@
     @include respond(tablet) {
         height: auto;
     }
+}
 
-    &__list {
-        display: flex;
-        gap: 2.4rem;
+.navbar-nav {
+    background-color: $color-white;
+    gap: 2.4rem;
 
-        @include respond(tablet) {
-            gap: 1rem;
-        }
-
-        @include respond(mobile) {
-            z-index: 100;
-            background-color: $color-primary-light;
-            position: fixed;
-            width: 60vw;
-            height: 100vh;
-
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            right: -60vw;
-            top: 0;
-            padding: 24px 24px 0 0;
-
-            transition: all .5s;
-
-            & button {
-                color: $color-white;
-                border: none;
-                font-size: 12px;
-            }
-        }
-    }
-
-    &__toggle {
-        position: relative;
-        align-self: center;
-        display: none;
-
-        @include respond(mobile) {
-            width: 4rem;
-            height: 100;
-            display: block;
-        }
+    @include respond(large-mobile) {
+        padding-top: 1.5rem;
+        gap: 1rem;
     }
 }
 
-.toggle {
-    display: none;
+.navbar-toggler {
+    border: none;
+    color: $color-primary-light;
 
-
-    &__menu {
-        width: 4rem;
-        height: 4rem;
-        display: block;
-    }
-
-    &__close {
-        fill: $color-white;
-        stroke: $color-white;
-        align-self: end;
-        width: 2.5rem;
-        height: 2.5rem;
-        display: block;
-        margin-bottom: 2rem;
+    &-icon {
+        width: 3.5rem;
+        height: 3.5rem;
     }
 }
+
 
 .hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-
+    margin-top: 9.6rem;
+}
+#hero {
     padding: 2.9rem 12.4rem 7.1rem 16rem;
 
     @include respond(mini-desktop) {
@@ -106,18 +55,18 @@
         flex-direction: column;
         height: min-content;
     }
+}
+.hero {
 
-    
-    
     &__content {
+        max-width: 59.2rem;
         display: grid;
         justify-items: start;
-        width: 37.64vw;
 
         animation: moveInLeft .8s ease-out;
 
         & p {
-            width: 26.52vw;
+            width: 65%;
 
             @include respond(large-mobile) {
                 width: 100%;
@@ -142,6 +91,7 @@
     }
 
     &__img {
+        max-width: 56.471rem;
         position: relative;
         display: grid;
         grid-template-columns: repeat(2, min-content);
@@ -153,6 +103,7 @@
         animation-fill-mode: backwards;
 
         &--1 {
+            max-width: 20.1rem;
             width: 14vw;
             justify-self: end;
 
@@ -162,9 +113,10 @@
         }
 
         &--2 {
+            max-width: 25.5rem;
             box-sizing: content-box;
             width: 17.75vw;
-            padding-left: 2vw;
+            padding-left: 3rem;
 
             @include respond(large-mobile) {
                 width: 35.5vw;
@@ -173,11 +125,12 @@
         }
 
         &--3 {
+            max-width: 23.5rem;
             box-sizing: content-box;
             width: 16.3vw;
             justify-self: end;
-            padding-right: 3.5vw;
-            transform: translateY(-4.5vw);
+            padding-right: 4.5rem;
+            transform: translateY(-4.5rem);
 
             @include respond(large-mobile) {
                 width: 32.6vw;
@@ -187,8 +140,9 @@
         }
 
         &--4 {
+            max-width: 22.6rem;
             width: 15.7vw;
-            transform: translateX(-1.5vw);
+            transform: translateX(-1.5rem);
 
             @include respond(large-mobile) {
                 width: 31.4vw;
@@ -198,28 +152,42 @@
     }
 
     &__shape {
+        max-width: 48.4rem;
+        max-height: 48.4rem;
         position: absolute;
         width: 85%;
         height: 85%;
         z-index: -10;
-        transform: translateX(3.5vw);
+        transform: translateX(3.5rem);
         background-image: url(../img/Shape-Circle.svg);
         background-size: 110%;
+
+        @include respond(large-desktop) {
+            transform: translateX(3.5vw);
+        }
 
         @include respond(large-mobile) {
             transform: translateX(7vw);
         }
 
         &--dot {
+            max-width: 36.7rem;
+            max-height: 18.3rem;
+
+            width: 25.6vw;
+            height: 12.7vw;
+
             position: absolute;
             display: block;
             background-size: cover;
             background-position: right;
-            right: 1.4vw;
-            top: 7vw;
-            width: 25.6vw;
-            height: 12.7vw;
-            background-image: url(../img/Shape-Dot.svg);
+            right: 4rem;
+            top: 10rem;
+
+            @include respond(large-desktop) {
+                right: 1.4vw;
+                top: 7vw;   
+            }
 
             @include respond(large-mobile) {
                 right: 6vw;
@@ -227,17 +195,30 @@
                 width: 51.2vw;
                 height: 25.4vw;
             }
+            
+            background-image: url(../img/Shape-Dot.svg);
         }
 
         &--triangle {
+            max-width: 10.1rem;
+            max-height: 10.1rem;
+
+            width: 7vw;
+            height: 7vw;
+
             position: absolute;
             display: block;
             background-size: cover;
             background-position: right;
-            right: -2.2vw;
-            bottom: 7.8vw;
-            width: 7vw;
-            height: 7vw;
+
+            right: -3rem;
+            bottom: 6rem;
+
+            @include respond(large-desktop) {
+                right: -2.2vw;
+                bottom: 5.5vw;  
+            }
+            
             background-image: url(../img/Shape-Triangle.svg);
 
             @include respond(large-mobile) {

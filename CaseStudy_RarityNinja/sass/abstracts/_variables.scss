@@ -20,3 +20,35 @@ $color-black: #231D4F;
 
 //FONT
 $default-font-size: 1.6rem;
+
+
+//modified max-widths
+/*
+Large Desktop : above 1200px
+Mini Desktop : 1199px - 992px
+Tablet : 991px - 768px
+Large mobile : 767px - 576px
+Mobile : 575px - 320px
+
+$breakpoint argument choices
+- mini-desktop
+- tablet
+- large-mobile
+- mobile
+
+ORDER: Base + typography > general layout + grid > page layout > components
+*/
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/_variables";
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 575px,
+  md: 767px,
+  lg: 991px,
+  xl: 1199px,
+  xxl: 1440px
+);
+
+//import bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";

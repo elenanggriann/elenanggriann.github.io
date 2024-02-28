@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: row;
     gap: 8px;
+    text-decoration: none;
 
     &__icon {
         position: relative;
@@ -27,6 +28,8 @@
         font-size: 20px;
         line-height: 28px;
         font-weight: 700;
+        text-decoration: none;
+        text-align: center;
 
         @include respond(mobile) {
             margin-left: 4px;

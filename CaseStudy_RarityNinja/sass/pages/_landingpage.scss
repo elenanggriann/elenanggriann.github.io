@@ -1,11 +1,8 @@
 .section-about {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 12.8rem;
     background-color: $color-grey-light-1;
+}
+#section-about {
+    gap: 12.8rem;
 
     @include respond(large-mobile) {
         flex-direction: column-reverse;
@@ -15,13 +12,10 @@
 
 
 .about {
-
     &__img {
+        max-width: 52.25rem;
         width: 75%;
         position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         
         @include respond(large-mobile) {
             width: 70%;
@@ -34,10 +28,6 @@
     }
 
     &__text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
         @include respond(large-mobile) {
             align-items: center;
             text-align: center;
@@ -45,12 +35,7 @@
     }
 }
 
-.section-pricing {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#section-pricing {
     padding: 8.8rem 25.6rem;
 
     @include respond(mini-desktop) {
@@ -68,16 +53,12 @@
 
 .pricing {
     &__heading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         gap: 1.6rem;
     }
 
     &__switch {
         display: flex;
         gap: 1.6rem;
-        justify-content: center;
         background-color: $color-grey-light-3;
         border-radius: 40px;
         padding: 6px;
@@ -103,10 +84,6 @@
 
 .section-extension {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
     p {
         opacity: 0.5;

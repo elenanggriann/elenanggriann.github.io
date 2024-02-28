@@ -1,11 +1,6 @@
 .btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: $default-font-size;
     text-decoration: none;
-    text-align: center;
 }
 
 .btn-text {
@@ -13,6 +8,7 @@
     &:link,
     &:visited {
         padding: 1.2rem 2.4rem;
+        font-weight: 500;
         border-radius: 1.6rem;
         transition: all .2s;
         position: relative;
@@ -34,10 +30,13 @@
 }
 
 .btn-secondery {
+    padding: 1.2rem 2.4rem;
+
     &,
     &:link,
     &:visited {
-        padding: 1.2rem 2.4rem;
+        font-weight: 500;
+        line-height: 2.4rem;
         border-radius: 1.6rem;
         transition: all .2s;
         position: relative;
@@ -65,6 +64,7 @@
 }
 
 .btn-primer {
+    
     &,
     &:link,
     &:visited {
@@ -80,6 +80,7 @@
 
     &:hover {
         background-color: $color-primary-light;
+        color: $color-white;
     }
 
     &:active,
@@ -89,8 +90,11 @@
     }
 
     &__card {
-        transition: all .2s;
-        border: 1px solid rgba($color-grey-light-2, 0);
+        &,
+        &:link,
+        &:visited {
+            transition: all .2s;
+            border: 1px solid rgba($color-grey-light-2, 0);}
 
         &:hover {
             background-color: $color-yellow;

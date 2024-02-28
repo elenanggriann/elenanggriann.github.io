@@ -75,7 +75,7 @@ window.addEventListener('scroll', () => {
                 section.querySelector('.heading-4').classList.add('animated-down1');
                 section.querySelector('.heading-2').classList.add('animated-down1');
                 section.querySelector('.paragraph').classList.add('animated-down2');
-                section.querySelector('button').classList.add('animated-down2');
+                section.querySelector('a').classList.add('animated-down2');
             }
         }
     });
