@@ -19091,7 +19091,8 @@ footer {
 
 .navbar-toggler {
   border: none;
-  color: #002352; }
+  color: #002352;
+  margin-bottom: 1rem; }
   .navbar-toggler-icon {
     width: 3.5rem;
     height: 3.5rem; }
