@@ -4,23 +4,19 @@ $color-primary-light: #002352;
 $color-secondary-light: #72C5F5;
 $color-secondary-dark: #2A85FF;
 
-
 $color-grey-light-1:#F5F9FF;
 $color-grey-light-2:#EBEBEB;
 $color-grey-light-3:#F7F7F7;
 
 $color-yellow: #FFBB1F;
 
-
 $color-grey-dark:#72C5F514; 
 
 $color-white:#fff;
 $color-black: #231D4F;
 
-
 //FONT
 $default-font-size: 1.6rem;
-
 
 //modified max-widths
 /*
@@ -38,6 +34,7 @@ $breakpoint argument choices
 
 ORDER: Base + typography > general layout + grid > page layout > components
 */
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap/scss/_variables";
 
